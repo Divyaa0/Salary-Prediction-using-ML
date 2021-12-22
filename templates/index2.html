@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href=" {{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <ul>
+
+        <li><a href="#predict" id="pred-btn">Predict</a></li>
+        <li><a href="#explore" id="exp-btn" name="show_explore_page">Explore</a></li>
+
+
+    </ul>
+
+    <div id="prediction-page" style="margin-left:40%;padding:1px 16px;height:1000px;">
+
+
+        <div class="txt-area">
+            <h1 class="main-heading">SaySalary</h1>
+            <p class="main-para">We need some information to predict Salary</p>
+        </div>
+
+        <div class="inputs">
+
+            <form method="POST" action="{{url_for('home')}}">
+                <label>Country </label>
+                <input list="country" name="country">
+                <datalist id="country">
+                    <option  name="a" value="United States of America" />
+                    <option  name="b" value="India" />
+                    <option  name="c" value="United Kingdom of Great Britain and Northern Ireland" />
+                    <option  name="d" value="Canada" />
+                    <option  name="e" value="France" />
+                    <option name="f" value="Brazil" />
+                    <option  name="g" value="Spain" />
+                    <option name="h" value="Netherlands" />
+                    <option name="i" value="Australia" />
+                    <option name="j" value="Poland" />
+                    <option name="k" value="Russian Federation " />
+                    <option name="l" value="Sweden" />
+                    <option name="m" value="Turkey" />
+                    <option name="m" value="Switzerland" />
+                    <option  name="n" value="Israel" />
+                    <option name="o" value="Norway" />
+                    <option name="p" value="Germany" />
+                    <option name="q" value="Italy" />
+
+                </datalist>
+                <label>Education Level </label>
+                <input list="edlevel" name="edlevel">
+                <datalist id="edlevel">
+                    <option value="Master’s degree" />
+                    <option value="Bachelor’s degree" />
+                    <option value="Post grad" />
+                    <option value="Less than a Bachelors" />
+                </datalist>
+                <label>Years Of Experience[0-50]</label>
+                <input name="exper" type=" number ">
+                <div style="display: inline;" class="final">
+                    <button class="submit " value="predict ">Calculate Salary</button>
+                    <h3 id="result" class="main-para "> {{pred}}</h3>
+                </div>
+
+
+            </form>
+            <!-- <button style="width: 138px; margin-top:10px" id="reset" class="submit ">Reset</button> -->
+
+        </div>
+
+    </div>
+    </div>
+    <!--  -->
+    <div id="explore-page" style="margin-left:40%;padding:1px 16px;height:1000px;">
+        <div class="txt-area">
+            <h1 class="main-heading">Explore Software Engineer Salaries</h1>
+            <p class="main-para">By DAXX Survey Of Recent Years</p>
+            <img width="70%" src="/static/images/graph.png" alt="Digibuddy app on laptop" class="laptop-img">
+        </div>
+
+
+    </div>
+
+</body>
+<script src="{{url_for('static', filename='js_script.js')}}"></script>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Predictor</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="ml_fluid.css"> -->
+    <link rel="stylesheet" type="text/css" href=" {{ url_for('static',filename='ml_fluid.css') }}">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <!-- <link rel="stylesheet" href="ml_style.css"> -->
+    <link rel="stylesheet" type="text/css" href=" {{ url_for('static',filename='ml_style.css') }}">
+    <!-- <link rel="stylesheet" href="machineLin/ml_media-queries.css"> -->
+    <link rel="stylesheet" type="text/css" href=" {{ url_for('static',filename='ml_media-queries.css') }}">
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="EL_vendors/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="ss.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="ss.png">
+    <link rel="manifest" href="EL_vendors/favicon_io/site.webmanifest">
+
+</head>
+
+<body>
+
+
+
+    <header style="background-image:url(/static/images/ml1.jpg);" id="home">
+        <nav>
+
+
+            <ul class="mainnav">
+
+                <li> <a href="#home"> Home </a></li>
+                <li> <a href="#about"> About </a> </li>
+
+            </ul>
+        </nav>
+        <div class="header-box">
+
+            <div class="header-box-text">
+                <h1 class="head-heading">SaySalary</h1>
+                <h2 class="head-heading2">Predict Your Payout!</h2>
+            </div>
+
+            <a href="/index2" value="index2 " class="btn btn-full js--scroll-to-contact">
+                    Predict Now</a>
+
+
+        </div>
+
+
+    </header>
+
+    <section class="about-section js--about-section" id="about">
+
+        <div class="row">
+
+            <div class="col span_1_of_2 about-box">
+
+                <h2 class="about-heading">About</h2>
+                <h2 class="about-heading">SaySalary is the leading Salary Predictor Website.</h2>
+                <p class="about-para">The graphical representation of predicting salary is a process that aims for developing computerized system to maintain all the daily work of salary growth graph in any field and can predict salary after a certain time period. ... And
+                    then it can predict a certain time period salary through the prediction algorithm.</p>
+
+            </div>
+            <div class="col span_1_of_2 about-box">
+                <img src="/static/images/about.jpg" alt="Digibuddy app on laptop" class="laptop-img">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    </section>
+
+    <section style="background-color: #ffd1b3;" class="about-section js--about-section" id="about">
+
+        <div class="row">
+
+            <div class="col span_1_of_2 about-box">
+
+                <h2 class="about-heading">Software Developer</h2>
+                <h2 class="about-heading">Average Software Developer Salary in the World</h2>
+                <p class="about-para">According to Indeed, the USA is the best-paying country for software engineers with the average software engineer Salary in 2021 reaching $110,638. This means that the US software engineer salary per month is $9,219. Junior developers
+                    in the USA are paid $103,382 a year, while senior engineers with 6-9 years of experience earn $121,488. The highest paid software engineer city in the USA is San Francisco. </p>
+
+            </div>
+            <div class="col span_1_of_2 about-box">
+                <img src="/static/images/soft.png" alt="Digibuddy app on laptop" class="laptop-img">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="about-section js--about-section" id="about">
+
+        <div class="row">
+
+            <div class="about-box2">
+
+                <h2 class="about-heading"></h2>
+
+                <h2 class="about-heading"></h2>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span_1_of_2">
+                <ul class="footer-nav">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">ios App</a></li>
+                    <li><a href="#">Android App</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col span_1_of_2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-reddit"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>SaySalary.com © 2021 - 2025 All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- <script src="ml_script.js"></script> -->
+    <script src="{{url_for('static', filename='ml_script.js')}}"></script>
+
+</body>
+
+</html>
